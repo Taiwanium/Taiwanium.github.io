@@ -1,0 +1,95 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(TestRenderFocus.png);
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}.navbar ul li:hover::after{
+     width: 100%;
+ }
+.slides {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #fff;
+    scroll-snap-align: start;
+}
+
+    .slides img {
+        width: 350px;
+    }
+
+    .slides h2 {
+        font-size: 70px;
+        font-weight: 600;
+        max-width: 650px;
+    }
+
+.slide1 {
+    background: linear-gradient(454deg, #4f4080, #9553ff);
+}
+
+.slide2 {
+    background: linear-gradient(454deg, #404c80, #53ff88);
+}
+
+.slide3 {
+    background: linear-gradient(454deg, #9574ff, #ff5353);
+}
+
+.slide4 {
+    background: linear-gradient(454deg, #9574ff, #ff5353);
+}

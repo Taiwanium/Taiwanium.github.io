@@ -1,8 +1,8 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Nathan's Portfolio</title>
+    <title>Full SCreen Scroll WEbsite</title>
     <link rel="stylesheet" href="StyleSheet1.css">
 </head>
 
@@ -13,31 +13,68 @@
         <div class="navbar">
             <img src="logo.png" class="logo">
             <ul>
-                <li><a href="#page-1">About Me</a></li>
-                <li><a href="#page-2">My Projects</a></li>
-                <li><a href="#page-3">Explore</a></li>
+                <li><a href="#page-1">Home</a></li>
+                <li><a href="#page-2">About Me</a></li>
+                <li><a href="#page-3">My Projects</a></li>
                 <li><a href="#page-4">This Website</a></li>
             </ul>
         </div>
 
         <div class="slides slide1" id="page-1">
-            <img src="pic-1.png">
-            <h2>Welcome to my Portfolio</h2>
+            <img src="portfolio1.png">
+            <h2>Welcome to Nathan's Portfolio</h2>
         </div>
         <div class="slides slide2" id="page-2">
-            <img src="pic-2.png">
+            <img src="pic-1.png">
             <h2>Who I Am</h2>
+            <ul class="accordion">
+                <li>
+                    <input type="radio" name="accordion" id="first" checked>
+                    <label for="first">Education</label>
+                    <div class="content">
+                        <p>
+                            I am currently a first-year student studying at the University of British Columbia. I am majoring engineering and am hoping to specialize in computer engineering in future years.  
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="accordion" id="second">
+                    <label for="second">Skills</label>
+                    <div class="content">
+                        <p>
+                            I am experienced in several programming languages including Java, JavaScript, C, Python, and C++. I also have experience in 3D modelling and computer animation.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="accordion" id="third">
+                    <label for="third">Experience</label>
+                    <div class="content">
+                        <p>
+                            I have experience working in a fast-paced environment in retail aquiring useful skills such as customer service, cash register operation, and stocking shelves. Throughout many volunteering opportunities, I have also developed signification leadership abilities, able to think fast and work cohesively in a team.
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </div>
         <div class="slides slide3" id="page-3">
             <img src="pic-3.png">
             <h2>Personal Projects</h2>
         </div>
         <div class="slides slide4" id="page-4">
-            <h2>This Website</h2>
-            <img src="pic-3.png">
+            <div class="text-container">
+                <h2>This Website</h2>
+                <p>This website was coded in html and CSS. I learned how to code in 
+                hmtl and CSS through high school classes
+                and taking online coding courses. The purpose of this website is to demonstrate the skills
+                I've learned and to display a few of my projects and accomplishments. This website is still in
+                a developing state and is not final.</p>
+            </div>
+            <img src="websitecode.png">
 
         </div>
     </div>
-
+    
 </body>
 </html>
+

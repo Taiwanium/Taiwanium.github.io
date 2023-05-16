@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 /* CSS Document */
 
 * {
@@ -77,13 +77,17 @@
         font-weight: 600;
         max-width: 650px;
     }
+    .slide4 img {
+        width: 1000px;
+    }
+
 
 .slide1 {
-    background: linear-gradient(454deg, #4f4080, #9553ff);
+    background: linear-gradient(454deg, #3E276E, #9553ff);
 }
 
 .slide2 {
-    background: linear-gradient(454deg, #404c80, #53ff88);
+    background: linear-gradient(454deg, #061748, #0B309B);
 }
 
 .slide3 {
@@ -91,5 +95,65 @@
 }
 
 .slide4 {
-    background: linear-gradient(454deg, #9574ff, #ff5353);
+    background: linear-gradient(454deg, #191818, #515151);
+}
+
+.text-container {
+    max-width: 475px;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 60px;
+}
+.accordion{
+    
+    width: 600px;
+}
+.accordion li {
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+
+}
+
+.accordion .content{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+
+}
+
+label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::before{
+    content: '-';
 }
